@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "___1",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "___1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-___1-Debug-6866032a25c54bf036f8.json",
+					"name" : "___1",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pierre/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/C++: \u0441\u043b\u043e\u0436\u043d\u044b\u0435 \u043c\u043e\u043c\u0435\u043d\u0442\u044b/\u0414\u043e\u043c\u0430\u0448\u043d\u0435\u0435 \u0437\u0430\u0434\u0430\u043d\u0438\u0435 \u2116 1/cmake-build-debug",
+		"source" : "/home/pierre/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/C++: \u0441\u043b\u043e\u0436\u043d\u044b\u0435 \u043c\u043e\u043c\u0435\u043d\u0442\u044b/\u0414\u043e\u043c\u0430\u0448\u043d\u0435\u0435 \u0437\u0430\u0434\u0430\u043d\u0438\u0435 \u2116 1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
