@@ -1,3 +1,0 @@
-/home/pierre/Документы/C++: сложные моменты/Домашнее задание № 1/cmake-build-debug/CMakeFiles/___1.dir
-/home/pierre/Документы/C++: сложные моменты/Домашнее задание № 1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/pierre/Документы/C++: сложные моменты/Домашнее задание № 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
