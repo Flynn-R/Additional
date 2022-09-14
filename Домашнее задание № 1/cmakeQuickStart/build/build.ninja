@@ -168,8 +168,8 @@ build ContinuousCoverage: phony CMakeFiles/ContinuousCoverage
 
 build cmake_object_order_depends_target_Homework-1: phony || CMakeFiles/Homework-1.dir
 
-build CMakeFiles/Homework-1.dir/test.cpp.o: CXX_COMPILER__Homework-1_Debug ../test.cpp || cmake_object_order_depends_target_Homework-1
-  DEP_FILE = CMakeFiles/Homework-1.dir/test.cpp.o.d
+build CMakeFiles/Homework-1.dir/main.cpp.o: CXX_COMPILER__Homework-1_Debug ../main.cpp || cmake_object_order_depends_target_Homework-1
+  DEP_FILE = CMakeFiles/Homework-1.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/Homework-1.dir
   OBJECT_FILE_DIR = CMakeFiles/Homework-1.dir
@@ -188,7 +188,7 @@ build CMakeFiles/Homework-1.dir/source.cpp.o: CXX_COMPILER__Homework-1_Debug ../
 #############################################
 # Link the executable Homework-1
 
-build Homework-1: CXX_EXECUTABLE_LINKER__Homework-1_Debug CMakeFiles/Homework-1.dir/test.cpp.o CMakeFiles/Homework-1.dir/source.cpp.o
+build Homework-1: CXX_EXECUTABLE_LINKER__Homework-1_Debug CMakeFiles/Homework-1.dir/main.cpp.o CMakeFiles/Homework-1.dir/source.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Homework-1.dir
   POST_BUILD = :

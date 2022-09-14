@@ -1,7 +1,9 @@
+#include "source.h"
+
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    ifstream file("ХХХ"); // путь к файлу PhoneBook.txt
+    ifstream file("/home/pierre/PhoneBook.txt"); // путь к файлу PhoneBook.txt
     PhoneBook book(file);
     cout << book;
     cout << "------SortByPhone-------" << endl;
@@ -30,7 +32,7 @@ int main()
     print_phone_number("Петров");
     cout << "----ChangePhoneNumber----" << endl;
     // book.ChangePhoneNumber(Person{ "Kotov", "Vasilii", "Eliseevich" },
-    book.ChangePhoneNumber(Person{ "Котов", "Василий", "Елисеевич" },
+    book.ChangePhoneNumber(Person{ "Котов", "Василий", "Елисееевич" },
     PhoneNumber{7, 123, "15344458", nullopt});
     // book.ChangePhoneNumber(Person{ "Mironova", "Margarita", "Vladimirovna" },
     book.ChangePhoneNumber(Person{ "Миронова", "Маргарита", "Владимировна" },

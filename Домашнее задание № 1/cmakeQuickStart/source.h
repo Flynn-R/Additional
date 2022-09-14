@@ -4,6 +4,7 @@
 #include <tuple>
 #include <vector>
 #include <fstream>
+#include <algorithm>
 
 using namespace std;
 
@@ -43,4 +44,8 @@ private:
 public:
     PhoneBook(ifstream&);
     friend ostream& operator<<(ostream&, PhoneBook&);
+    void SortByName();
+    void SortByPhone();
+    pair<string, PhoneNumber> GetPhoneNumber(string);
+    void ChangePhoneNumber(Person, PhoneNumber);
 };

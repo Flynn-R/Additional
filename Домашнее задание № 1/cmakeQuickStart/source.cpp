@@ -144,3 +144,71 @@ ostream& operator<<(ostream& out, PhoneBook& book)
         out << it.first << ' ' << it.second << endl;
     return out;
 }
+
+void PhoneBook::SortByName()
+{
+    auto comparator = [](pair<Person, PhoneNumber>& p1, pair<Person, PhoneNumber>& p2)
+    {
+        if (p1.first.surname != p2.first.surname)
+            return p1.first.surname < p2.first.surname;
+        else if (p1.first.name != p2.first.name)
+            return p1.first.name < p2.first.name;
+        else if (p1.first.patronicName && p2.first.patronicName)
+            return p1.first.patronicName < p2.first.patronicName;
+        else
+            return false;
+    };
+    sort(list.begin(), list.end(), comparator);
+}
+
+void PhoneBook::SortByPhone()
+{
+    auto comparator = [](pair<Person, PhoneNumber>& nmb1, pair<Person, PhoneNumber>& nmb2)
+    {
+        if (nmb1.second.countryCode != nmb2.second.countryCode)
+            return nmb1.second.countryCode < nmb2.second.countryCode;
+        else if (nmb1.second.cityCode != nmb2.second.cityCode)
+            return nmb1.second.cityCode < nmb2.second.cityCode;
+        else if (nmb1.second.number != nmb2.second.number)
+            return nmb1.second.number < nmb2.second.number;
+        else
+            return nmb1.second.additionalNumber < nmb2.second.additionalNumber;
+    };
+    sort(list.begin(), list.end(), comparator);
+}
+
+pair<string, PhoneNumber> PhoneBook::GetPhoneNumber(string surname)
+{
+    size_t count = 0;
+    PhoneNumber found;
+    for (auto& it : list)
+    {
+        if (it.first.surname == surname)
+        {
+            ++count;
+            found = it.second;
+        }
+    }
+
+    if (count == 1)
+        return make_pair(""s, found);
+    else if (count < 1)
+        return make_pair("not found"s, found);
+    else
+        return make_pair("found more than 1", found);
+}
+
+void PhoneBook::ChangePhoneNumber(Person p, PhoneNumber nmb)
+{
+    for (auto& it : list)
+    {
+        if (it.first == p)
+        {
+            it.second.countryCode = nmb.countryCode;
+            it.second.cityCode = nmb.cityCode;
+            it.second.number = nmb.number;
+            if (nmb.additionalNumber)
+                it.second.additionalNumber.emplace(nmb.additionalNumber.value());
+        }
+    }
+}

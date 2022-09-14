@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 include(CTest)
 enable_testing()
 
-add_executable(Homework-1 test.cpp source.cpp source.h)
+add_executable(Homework-1 main.cpp source.cpp source.h)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

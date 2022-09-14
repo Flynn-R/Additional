@@ -1,8 +1,8 @@
 [
 {
   "directory": "/home/pierre/Документы/C++: сложные моменты/Домашнее задание № 1/cmakeQuickStart/build",
-  "command": "/usr/bin/g++ -g -std=gnu++17 -o CMakeFiles/Homework-1.dir/test.cpp.o -c \"/home/pierre/Документы/C++: сложные моменты/Домашнее задание № 1/cmakeQuickStart/test.cpp\"",
-  "file": "/home/pierre/Документы/C++: сложные моменты/Домашнее задание № 1/cmakeQuickStart/test.cpp"
+  "command": "/usr/bin/g++ -g -std=gnu++17 -o CMakeFiles/Homework-1.dir/main.cpp.o -c \"/home/pierre/Документы/C++: сложные моменты/Домашнее задание № 1/cmakeQuickStart/main.cpp\"",
+  "file": "/home/pierre/Документы/C++: сложные моменты/Домашнее задание № 1/cmakeQuickStart/main.cpp"
 },
 {
   "directory": "/home/pierre/Документы/C++: сложные моменты/Домашнее задание № 1/cmakeQuickStart/build",
