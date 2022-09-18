@@ -22,11 +22,19 @@ void print(list<float>& list)
 Matrix::Matrix()
 {
     matrix.reserve(SIZE);
-    for (size_t i = 0; i < SIZE; ++i)
+    if (SIZE == 1)
     {
-        matrix[i].reserve(SIZE);
-        for (size_t j = 0; j < SIZE; ++j)
-            matrix[i].push_back(rand() % 100);
+        matrix[0].reserve(SIZE);
+        matrix[0][0] = rand() % 100;
+    }
+    else
+    {
+        for (size_t i = 0; i < SIZE; ++i)
+        {
+            matrix[i].reserve(SIZE);
+            for (size_t j = 0; j < SIZE; ++j)
+                matrix[i].push_back(rand() % 100);
+        }
     }
 }
 
@@ -42,7 +50,7 @@ void Matrix::print()
 
 int Matrix::det()
 {
-    if (matrix.size() == 1)
+    if (SIZE == 1)
         return matrix[0][0];
     return det(matrix);
 }
@@ -50,7 +58,7 @@ int Matrix::det()
 int Matrix::det(vector<vector<int>>& minor)
 {
     int res = 0;
-    if (minor.size() == 1)
+    if (minor[0].size() == 1)
         return minor[0][0];
     size_t size = minor[0].size();
     vector<vector<int>> newMinor(size - 1, vector<int>(size - 1));
