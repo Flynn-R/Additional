@@ -32,7 +32,7 @@ int main()
         {
             this_thread::sleep_for(1s);
             percentage = (static_cast<float>(progress) / i) * 100;
-            system("clear");
+            system("cls");
             cout << "Progress: " << percentage << "%" << endl;
         }
         prime_calc.join();
